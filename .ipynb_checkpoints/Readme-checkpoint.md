@@ -1,19 +1,33 @@
 # Iris - Logistic Regression
 
-This project trains a multinomial logistic regression classifier on the Iris dataset.
+This machine learning project using the Iris dataset. The goal is to build a logistic regression model to classify iris flowers into three species.
+
+## Project Overview
+- Load and explore the Iris dataset
+- Perform basic EDA:
+  - Summary statistics
+  - Class distribution
+  - Pairwise feature relationships
+- Preprocess the data:
+  - Split dataset into training and testing sets
+  - Scale features using StandardScaler
+- Train a multinomial logistic regression model
+- Evaluate the model using:
+  - Accuracy
+  - Confusion matrix
+
+## Outcomes
+- The logistic regression model achieved **93% accuracy** on the test set.  
+- A **confusion matrix** was plotted to visualize the model’s predictions for each class.  
+- The project demonstrates basic machine learning workflow:
+  - Data loading and exploration
+  - Preprocessing (train/test split and scaling)
+  - Model training with logistic regression
+  - Model evaluation
 
 ## Requirements
-python 3.8+
-pip install -r requirements.txt
+Python 3.8+  
+Install dependencies using:
 
-## Run
-Open `notebook.ipynb` in Jupyter and run all cells. The notebook:
-- loads and explores the Iris dataset
-- trains and tunes a logistic regression model
-- evaluates results (confusion matrix, classification report)
-- visualizes decision regions via PCA
-- saves scaler and model to disk
-
-Files generated:
-- scaler_iris.pkl
-- logistic_iris.pkl
+```bash
+pip install numpy pandas matplotlib scikit-learn
